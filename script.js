@@ -131,3 +131,4 @@ searchButton.addEventListener("click", ()=>{
     currentWeather(searchCity.value);
     currentForecast(searchCity.value);
 });
+
