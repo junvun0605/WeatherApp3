@@ -91,25 +91,25 @@ async function currentForecast(city){
 
             switch (forecastIcons) {
                 case "Clouds":
-                    forecastIcon.src = "/images/weather/cloudy.png";
+                    forecastIcon.src = "images/weather/cloudy.png";
                     break;
                 case "Clear":
-                    forecastIcon.src = "/images/weather/sun.png";
+                    forecastIcon.src = "images/weather/sun.png";
                     break;
                 case "Rain":
-                    forecastIcon.src = "/images/weather/rain.png";
+                    forecastIcon.src = "images/weather/rain.png";
                     break;
                 case "Snow":
-                    forecastIcon.src = "/images/weather/snow.png";
+                    forecastIcon.src = "images/weather/snow.png";
                     break;
                 case "Thunderstorm":
-                    forecastIcon.src = "/images/weather/storm.png";
+                    forecastIcon.src = "images/weather/storm.png";
                     break;
                 case "Mist":
-                    forecastIcon.src = "/images/weather/mist.png";
+                    forecastIcon.src = "images/weather/mist.png";
                     break;
                 default:
-                    forecastIcon.src = "/images/weather/unknown.png";
+                    forecastIcon.src = "images/weather/unknown.png";
             }
         }
 
