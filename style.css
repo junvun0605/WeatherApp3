@@ -1,0 +1,178 @@
+html{
+    font-family:sans-serif;
+}
+
+body {
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.875em;
+}
+
+p {
+    font-size: 0.875em;
+}  
+
+
+#header{
+    background:linear-gradient(#62cff4,#2c67f2);
+    color: white;
+    padding: 50px;
+    font-weight:800;
+    font-size:35px;
+    text-align: center;
+}
+
+#cloudy-img img{
+    width:40px;
+    height:40px;
+    float:left;
+}
+
+#sun-img img{
+    float:right;
+    width: 40px;
+    height: 40px;
+}
+
+.search-city{
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+#search-id{
+    width:400px;
+    height:40px;
+    padding:5px;
+    border:none;
+    border-radius: 5px;
+    position:relative;
+}
+#search-icon{
+    background: none;
+    cursor:pointer;
+    border:none;
+}
+
+#search-icon img{
+    height:30px;
+    width:30;
+}
+
+#location{
+    text-align: center;
+    font-size:28px;
+}
+
+.display{
+    background:linear-gradient(#62cff4,#2c67f2);
+    margin:100px auto 0;
+    width: 35%;
+    border-radius: 25px;
+    padding:15px 30px 30px 15px;
+    text-align: center;
+}
+
+.cities{
+    font-weight:500;
+    font-size:48px;
+    
+}
+
+.current{
+    font-size:18px;
+    padding-bottom:15px;
+}
+
+.weather img{
+    width:80px;
+    height:80px;
+    text-align: center;
+    align-items: center;
+}
+
+
+.weather-info {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px; 
+}
+
+.weather-info img {
+    width: 40px; 
+    height: 40px; 
+}
+
+.weather-info .thermometer,
+.weather-info .windy,
+.weather-info .humidity,
+.weather-info .pressure {
+    width: calc(50% - 5px); 
+    font-size:18px;
+}
+
+.forecast{
+    text-align: center;
+    font-size:28px;
+    width: 100%;
+    padding-top:30px
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding:10px;
+    margin:100px;
+    border-radius:25px;
+    background:linear-gradient(#03040f,#102041,#0d4050);
+}
+
+.grid-item,
+.grid-item-1,
+.grid-item-2,
+.grid-item-3,
+.grid-item-4,
+.grid-item-5
+{
+    font-size:24px;
+    color:white;
+
+}
+
+#designs p{
+    font-size:14px;
+    font-weight:500;
+    display: inline;
+    
+}
+
+
+body{
+    background-color: white;
+    background-image: url(images/11852427_4858794.jpg);
+    margin:0;
+}
+
+@media only screen and (max-width: 929px) {
+    #designs p{
+        font-size:16px;
+        font-weight:500;
+        display:flex;
+        text-align: center;
+    }
+  }
+
+
+
+
+
+
+
+
