@@ -66,7 +66,7 @@ async function currentForecast(city){
         forecastDate.toLocaleString('en-US', { timeZone: 'Asia/Kuala_Lumpur' });
 
         var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        var formattedDate = forecastDate.toLocaleDateString(undefined, options);
+        var formattedDate = forecastDate.toLocaleDateString('en-US', options);
 
         document.querySelector(".date-now").innerHTML = formattedDate;
 
@@ -81,7 +81,7 @@ async function currentForecast(city){
             var period = hours < 12 ? 'AM' : 'PM';
             var formattedTime = (formattedHours < 10 ? '0' : '') + formattedHours + ':' + (minutes < 10 ? '0' : '') + minutes + ' ' + period;
 
-            document.querySelector(`.grid-item-${i+1}`).innerHTML = formattedTime;
+            document.querySelector(`.grid-item-responsive-${i+1}`).innerHTML = formattedTime;
         }
 
         for (var i = 0; i < 5; i++) {
@@ -127,10 +127,7 @@ async function currentForecast(city){
     
 }
 
-
-
 searchButton.addEventListener("click", ()=>{
     currentWeather(searchCity.value);
     currentForecast(searchCity.value);
 });
-
